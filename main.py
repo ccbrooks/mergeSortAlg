@@ -1,5 +1,5 @@
 # Python program for implementation of MergeSort
-
+import numpy as np
 # Merges two subarrays of arr[].
 # First subarray is arr[l..m]
 # Second subarray is arr[m+1..r]
@@ -65,8 +65,8 @@ def mergeSort(arr, l, r):
 
 
 # Driver code to test above
-arr = [0, 1, 3, 6, 2, 4]
-n = len(arr)
+n = 10
+arr = np.random.randint(1, 10, n)
 print("Given array is")
 for i in range(n):
 	print("%d" % arr[i],end=" ")
